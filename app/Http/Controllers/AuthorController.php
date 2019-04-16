@@ -31,7 +31,7 @@ class AuthorController extends Controller
      */
     public function store(AuthorStoreRequest $request)
     {
-        return Author::create($request->all())->load('posts');
+        return Author::firstOrCreate($request->all())->load('posts');
     }
 
     /**
