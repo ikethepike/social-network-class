@@ -34,3 +34,12 @@ Route::delete('posts/{id}', 'PostController@delete');
 
 // -- Upvote a post
 Route::put('posts/upvote/{id}', 'PostController@upvote');
+
+// Ball Game Leaderboard Routes
+
+// -- Create a new Game 
+Route::post('game', 'GameController@store');
+
+// -- Return top 10 games
+Route::get('games', 'GameController@index');
+
