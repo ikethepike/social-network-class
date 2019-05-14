@@ -1,9 +1,9 @@
 <?php
 
-use App\Highscore;
 
 namespace App\Http\Controllers;
 
+use App\Highscore;
 use Illuminate\Http\Request;
 
 class HighscoreController extends Controller
