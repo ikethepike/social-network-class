@@ -34,3 +34,8 @@ Route::delete('posts/{id}', 'PostController@delete');
 
 // -- Upvote a post
 Route::put('posts/upvote/{id}', 'PostController@upvote');
+
+
+Route::post('highscores', 'HighscoreController@store');
+
+Route::get('highscore', 'HighscoreController@list');
