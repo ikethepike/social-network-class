@@ -43,3 +43,7 @@ Route::post('game', 'GameController@store');
 // -- Return top 10 games
 Route::get('games', 'GameController@index');
 
+
+Route::post('highscores', 'HighscoreController@store');
+
+Route::get('highscore', 'HighscoreController@list');
