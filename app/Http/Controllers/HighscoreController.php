@@ -13,7 +13,7 @@ class HighscoreController extends Controller
         return Highscore::create([
             "name" => $request->name,
             "score" => $request->score,
-            "level" => $request->level,
+            "level" => $request->input("level", 0),
         ]);
     }
 
